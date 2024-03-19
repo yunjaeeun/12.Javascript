@@ -35,5 +35,5 @@ const greedStudent = {
     __proto__: student
 }
 
-console.log(greedStudent.activate);
-console.log(greedStudent.passion);
+console.log(greedStudent.activate);         // user2에서 상속
+console.log(greedStudent.passion);          // student에서 상속

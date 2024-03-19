@@ -20,3 +20,5 @@ console.log(apply(decrease, 1));
 
 /* 배열의 정렬을 다룰 떄의 예시 */
 console.log([3, 2, 1, 5, 4].sort(function(left, right) {return right-left} ));
+
+/* 비동기 처리(이벤트, 타이머, ajax, fetch, ...)에 활용되는 중요한 패턴이다. */

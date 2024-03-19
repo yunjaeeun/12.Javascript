@@ -21,5 +21,5 @@ console.log(`NaN === NaN: ${NaN === NaN}`);
 console.log(`Number.isNaN(NaN): ${Number.isNaN(NaN)}`);
 
 /* 3. 일치하지 않는 값 비교 */
-console.log(`1 != '1': ${1!= '1'}`);
-console.log(`1 != '1': ${1!== '1'}`);
+console.log(`1 != '1': ${1!= '1'}`);        // false
+console.log(`1 != '1': ${1!== '1'}`);       // true

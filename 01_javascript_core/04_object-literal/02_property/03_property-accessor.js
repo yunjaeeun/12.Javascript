@@ -26,6 +26,7 @@ var obj = {
 // console.log(obj[dash-key]);
 console.log(obj['dash-key']);
 
+/* 프로퍼티 키가 숫자로 이루어진 경우 홀따옴표를 생략한 대괄호 표기법도 가능하지만 가능하면 홀따옴표를 붙이자 */
 // console.log(obj.0);
 // console.log(obj.'0');
 console.log(obj[0]);

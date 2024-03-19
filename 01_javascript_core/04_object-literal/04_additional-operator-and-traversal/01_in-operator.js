@@ -15,4 +15,5 @@ console.log('test' in student)
 for(var key in student) {
     console.log(`key: ${key}`);
     console.log(`student[${key}]: ${student[key]}`);        // 대괄호 표기법으로 접근하지만 key는 변수이므로 홀따옴표(`)를 붙이지 않는다.
+    // console.log(`<td>${student[key]}</td>`)              // 백엔드와 통신한 값을 이용해 태그로 만들 수 있다.
 }

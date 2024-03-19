@@ -15,4 +15,4 @@ console.log(typeof undef);
 /* 변수에 값이 없다는 것을 의도적으로 명시할 때 사용한다. */
 var nullVar = 'something';
 nullVar = null;             // 이전 참조를 제거하여 더 이상 'something'을 참조하지 않는다.
-console.log(typeof nullVar);
+console.log(nullVar);

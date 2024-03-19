@@ -3,16 +3,16 @@
 /* 표현식을 평가하는 도중 평가 결과가 확정된 경우 나머지 평가 과정을 생략하는 것 */
 
 console.log('=== OR ===')
-/* 1. OR의 경우(가장 앞에 있는 true로 판별) */
+/* 1. OR의 경우(가장 앞에 있는 true로 판별, 앞의 값이 false면 뒤에 값도 실행) */
 console.log('apple' || 'banana');       // true || true인 셈이다.
 console.log('apple' || false);       // true || false -> apple
 console.log('' || 'banana');       // false || true -> banana
 
 
 console.log('=== AND ===')
-/* 2. AND의 경우(가장 뒤에 있는 true로 판별) */
+/* 2. AND의 경우(가장 뒤에 있는 true로 판별, 앞의 값의 false면 실행되지 않음) */
 console.log('apple' && 'banana');       // true && true -> banana
-console.log(false && 'banana');         // false && false -> false
+console.log(false && 'banana');         // false && 'true' -> false
 console.log('apple' && false);          // true && false -> false
 
 var num = 2;
@@ -26,5 +26,5 @@ if(num % 2 == 0) {
 */
 
 /* 단축 평가를 활용하여 같은 결과를 얻을 수 있다. */
-num % 2 == 0 && console.log('짝수입니다.');
-num % 2 != 0 || console.log('홀수입니다.');
+num % 2 == 0 && console.log('짝수입니다.');         // &&는 왼쪽이 맞으면 오른쪽 실행
+num % 2 == 0 || console.log('홀수입니다.');         // ||는 왼쪽이 틀리면 오른쪽 실행

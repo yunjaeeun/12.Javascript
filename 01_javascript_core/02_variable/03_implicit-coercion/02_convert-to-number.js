@@ -21,5 +21,7 @@ console.log(+{});
 console.log(+[]);
 console.log(+function(){});
 
+/* 빈 문자열, 빈 배열, null, false는 0으로 true는 1로 반환 */
+
 
 

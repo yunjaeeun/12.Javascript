@@ -20,8 +20,9 @@ console.log(message());
 message = () => "Arrow Function2";
 console.log(message());
 
-message = (val1, val2) => "Arrow " + val1 + val2;
+message = (val1, val2) => "Arrow " + val1 + val2;       // 하나의 값이기 때문에 return 가능.
 console.log(message('val1 출력', ' val2 출력'));
 
+/* 화살표 함수의 매개변수가 없거나 2개 이상일 때는 소괄호를 생략할 수 없지만 하나일 때는 소괄호도 생략 가능하다. */
 message = val1 => "Arrow" + val1;
 console.log(message(' Function are Good'));

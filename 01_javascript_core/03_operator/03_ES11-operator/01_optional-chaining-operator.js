@@ -12,6 +12,6 @@ var obj = null;
 var val = obj?.value;       // npe 방지
 console.log(val);
 
-var str = '';
-var len = str.length;
+var str = '';               // Falsy하지만 null이나 undefiened는 아니다.
+var len = str?.length;
 console.log(len);

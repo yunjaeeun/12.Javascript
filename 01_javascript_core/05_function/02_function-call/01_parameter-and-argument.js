@@ -8,7 +8,7 @@ function hello(name) {
     console.log('arguments: ', arguments);
     console.log('두번째 인자: ', arguments['1']);
 
-    return `${arguments[1]}님 안녕하세요!`
+    return `${named}님 안녕하세요!`
 }
 
 var result = hello('홍길동')

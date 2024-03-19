@@ -18,6 +18,7 @@ var student = {
 
 console.log(student);
 console.log(typeof student);
+
 console.log(student.getInfo);
 console.log(student.getInfo());
 
