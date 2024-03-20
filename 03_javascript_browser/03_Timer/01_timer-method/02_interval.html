@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>02. interval</h1>
+
+    <h3>setInterval</h3>
+
+    <script>
+        let count = 1;
+        const timeId = setInterval(() => {              // 반복 시작
+            console.log(count++);
+            if(count == 6) {                            // 카운트가 6이 되면 반복 종료
+                clearInterval(timeId);                  // 반복 종료
+                console.log('interval timer 종료!');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
